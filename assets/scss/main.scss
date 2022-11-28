@@ -83,19 +83,9 @@ body {
             outline: none;
             margin-bottom: 30px;
         }
-
-        &-btn-submit {
-            width: 325px;
-            margin: 23px auto 0;
-            padding-top: 18px;
-            padding-bottom: 9px;
-            font-size: 24px;
-            font-weight: 700;
-            border: none;
-            border-radius: 2px;
-            background: linear-gradient(180deg, rgb(255, 255, 255), rgb(158, 235, 0) 100%);
-            box-shadow: 0 3px 6px #00000029;
-        }
+    }
+    .btn-contact {
+        margin: 23px auto 0;
     }
 }
 
@@ -126,6 +116,114 @@ label[for="bannerCheckbox"] span {
         box-shadow: 0 3px 6px #00000029;
         position: absolute;
         right: -11px;
+    }
+}
+
+.btn-contact {
+    width: 325px;
+    padding-top: 15px;
+    padding-bottom: 9px;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+    background: linear-gradient(180deg, rgb(255, 255, 255), rgb(158, 235, 0) 100%);
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.benefits {
+    padding-top: 80px;
+    padding-bottom: 110px;
+    background: url('../images/benefits-bg.jpg') no-repeat center / cover;
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__block {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        div + div {
+            margin-left: 70px;
+        }
+    }
+    &__item {
+        flex-basis: 25%;
+        flex-shrink: 0;
+        text-align: center;
+        margin-bottom: 30px;
+
+        > span {
+            display: block;
+        }
+        &-badge {
+            font-size: 64px;
+            font-weight: bold;
+            color: #8600ff;
+        }
+        &-text {
+            margin-top: 6px;
+            font-size: 38px;
+            font-weight: 500;
+        }
+    }
+    &__title {
+        margin: 45px auto;
+        width: 60%;
+        font-size: 38px;
+        font-weight: 700;
+        color: #87009d;
+        line-height: 56px;
+        text-align: center;
+    }
+    &__superiority {
+        width: 65%;
+        margin: 78px auto 85px;
+        display: grid;
+        grid-template-columns: repeat(3, 354px);
+        gap: 83px;
+
+        &-item {
+            height: 354px;
+            padding: 45px 35px 20px;
+            border-radius: 30px;
+            background: linear-gradient(0, rgb(232, 2, 251), rgb(41, 16, 64) 100%);
+            box-shadow: 0 2px 10px #00000059;
+            text-align: center;
+
+            span {
+                display: block;
+                color: white;
+            }
+
+            img {
+                margin-bottom: 38px;
+            }
+        }
+        &-title {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        &-text {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+    }
+    .btn-contact {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 352px;
+        padding-top: 27px;
+        padding-bottom: 16px;
     }
 }
 
