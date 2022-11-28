@@ -19,7 +19,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -27,7 +27,10 @@ body {
     padding-top: 160px;
     width: 100%;
     height: 1080px;
-    background: url('../images/main-bg.jpg') no-repeat center / cover;
+    background-image: url('../images/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: white;
     text-align: center;
 
@@ -35,14 +38,12 @@ body {
         width: 50%;
         margin-left: auto;
         margin-right: 0;
-        padding-left: 135px;
+        padding-right: 107px;
     }
-
     h1, h2 {
         margin-top: 38px;
         font-weight: 700;
     }
-
     h1 {
         font-size: 44px;
 
@@ -52,7 +53,6 @@ body {
             color: #9eeb00;
         }
     }
-
     h2 {
         font-size: 26px;
 
@@ -61,15 +61,19 @@ body {
             margin-top: 14px;
         }
     }
-
+    &__img {
+        display: none;
+    }
     &__form {
         display: flex;
         flex-direction: column;
         margin-top: 44px;
 
+        &-title {
+            display: none;
+        }
         &-field {
             width: 328px;
-            height: 56px;
             padding: 22px 16px 16px;
             border: none;
             border-radius: 2px;

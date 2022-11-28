@@ -1,7 +1,4 @@
-@media (min-width: 1024px) {
-    label[for="bannerCheckbox"] span,
-    label[for="bannerCheckbox"] span::after,
-    .banner__form-btn-submit {
-        cursor: pointer;
-    }
-}
+@import '1440';
+@import '1280';
+@import '1024';
+@import '576';

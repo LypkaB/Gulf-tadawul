@@ -1,0 +1,13 @@
+@media (max-width: 1280px) {
+    .banner {
+        background-image: url('../images/background/main-bg__second.jpg');
+
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__descr {
+            padding-right: 0;
+        }
+    }
+}
