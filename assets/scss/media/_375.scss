@@ -1,0 +1,13 @@
+@media (max-width: 375px) {
+    .btn-contact {
+        width: 100%;
+    }
+    .benefits__block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .swiper {
+        width: 250%;
+        margin-left: -75%;
+    }
+}

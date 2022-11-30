@@ -278,6 +278,49 @@ label[for="bannerCheckbox"] span::after {
   padding-bottom: 16px;
 }
 
+.benefits__swiper {
+  display: none;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 250%;
+  height: 365px;
+  margin-left: -75%;
+  margin-bottom: 80px;
+  overflow: visible;
+}
+
+.swiper-slide.benefits__details-item {
+  width: 281px;
+  height: 365px;
+  padding: 35px 25px 20px;
+}
+
+.swiper-slide.benefits__details-item img {
+  margin-bottom: 30px;
+}
+
+.swiper.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: -50px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  color: black;
+  border: 1px solid #9e5aa5;
+  opacity: 1;
+  outline: none;
+}
+
+.swiper-pagination-bullet-active {
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#e802fb), to(#291040));
+  background: -o-linear-gradient(0, #e802fb, #291040 100%);
+  background: linear-gradient(0, #e802fb, #291040 100%);
+}
+
 @-moz-document url-prefix()  {
   label[for="bannerCheckbox"] span {
     padding-right: 20px;
@@ -475,6 +518,11 @@ label[for="bannerCheckbox"] span::after {
     font-size: 12px;
   }
 
+  .benefits {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
   .benefits__block {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -488,5 +536,35 @@ label[for="bannerCheckbox"] span::after {
   .benefits__item {
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
+  }
+
+  .benefits__details,
+  .benefits .btn-contact {
+    display: none;
+  }
+
+  .benefits__swiper {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .btn-contact {
+    width: 100%;
+  }
+
+  .benefits__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .swiper {
+    width: 250%;
+    margin-left: -75%;
   }
 }

@@ -44,6 +44,9 @@
         font-size: 12px;
     }
     .benefits {
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+
         &__block {
             justify-content: space-between;
 
@@ -53,6 +56,13 @@
         }
         &__item {
             flex-basis: 30%;
+        }
+        &__details,
+        .btn-contact {
+            display: none;
+        }
+        &__swiper {
+            display: block;
         }
     }
 }

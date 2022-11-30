@@ -14,7 +14,8 @@
     <!-- Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap">
 
-    <!-- Style -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -111,5 +112,46 @@
             <button class="btn-contact">سجل الآن</button>
         </div>
     </section>
+    <div class="benefits__swiper container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide benefits__details-item">
+                    <img src="./assets/images/icons-benefits/benefits__icon-speed.svg" alt="Speed">
+                    <span class="benefits__details-title">المؤشرات</span>
+                    <span class="benefits__details-text">مؤشرات الأسهم العالمية في الولايات المتحدة وأوروبا وغيرها من المؤشرات</span>
+                </div>
+                <div class="swiper-slide benefits__details-item">
+                    <img src="./assets/images/icons-benefits/benefits__icon-truck.svg" alt="Truck">
+                    <span class="benefits__details-title">السلع</span>
+                    <span class="benefits__details-text">قم بالتداول في السلع الدائمة مثل النفط القمح، السكر والقهوة</span>
+                </div>
+                <div class="swiper-slide benefits__details-item">
+                    <img src="./assets/images/icons-benefits/benefits__icon-rating.svg" alt="Rating">
+                    <span class="benefits__details-title">الاسهم</span>
+                    <span class="benefits__details-text">اختر من بين أكثر من 450 سهم للتداول في السوق العالمية</span>
+                </div>
+                <div class="swiper-slide benefits__details-item">
+                    <img src="./assets/images/icons-benefits/benefits__icon-bitcoin.svg" alt="Bitcoin">
+                    <span class="benefits__details-title">العملات الرقمية</span>
+                    <span class="benefits__details-text">اكتشف عالم جديد من العملات الرقمية البيتكوين، اإإيثوريوم وغيرها الكثير من أفضل العملات</span>
+                </div>
+                <div class="swiper-slide benefits__details-item">
+                    <img src="./assets/images/icons-benefits/benefits__icon-coins.svg" alt="Coins">
+                    <span class="benefits__details-title">العملات الاجنيبة</span>
+                    <span class="benefits__details-text">استكشف أكبر سوق مالي في العالم. تداول أزواج العملات الرئيسية والناشئة المتوفرة على منصاتنا.</span>
+                </div>
+                <div class="swiper-slide benefits__details-item">
+                    <img src="./assets/images/icons-benefits/benefits__icon-rating.svg" alt="Rating">
+                    <span class="benefits__details-title">المعادن</span>
+                    <span class="benefits__details-text">تنويع محفظتك مع المعادن مثل الذهب (الأكثر نشاطا في العالم) وكذلك الفضة والنحاس</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

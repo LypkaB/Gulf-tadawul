@@ -228,6 +228,44 @@ label[for="bannerCheckbox"] span {
         padding-top: 27px;
         padding-bottom: 16px;
     }
+    &__swiper {
+        display: none;
+        overflow: hidden;
+    }
+}
+
+.swiper {
+    width: 250%;
+    height: 365px;
+    margin-left: -75%;
+    margin-bottom: 80px;
+    overflow: visible;
+
+    &-slide.benefits__details-item {
+        width: 281px;
+        height: 365px;
+        padding: 35px 25px 20px;
+
+        img {
+            margin-bottom: 30px;
+        }
+    }
+    &.swiper-horizontal>.swiper-pagination-bullets {
+        bottom: -50px;
+    }
+    &-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        color: black;
+        border: 1px solid #9e5aa5;
+        opacity: 1;
+        outline: none;
+
+        &-active {
+            background: linear-gradient(0, rgb(232, 2, 251), rgb(41, 16, 64) 100%);
+        }
+    }
 }
 
 @-moz-document url-prefix() {
