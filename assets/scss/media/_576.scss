@@ -43,4 +43,16 @@
     label[for="bannerCheckbox"] span {
         font-size: 12px;
     }
+    .benefits {
+        &__block {
+            justify-content: space-between;
+
+            div + div {
+                margin-left: 0;
+            }
+        }
+        &__item {
+            flex-basis: 30%;
+        }
+    }
 }

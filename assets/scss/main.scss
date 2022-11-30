@@ -182,12 +182,15 @@ label[for="bannerCheckbox"] span {
         line-height: 56px;
         text-align: center;
     }
-    &__superiority {
-        width: 65%;
+    &__details {
         margin: 78px auto 85px;
         display: grid;
         grid-template-columns: repeat(3, 354px);
         gap: 83px;
+        justify-content: space-evenly;
+        justify-items: center;
+        padding-left: 18%;
+        padding-right: 18%;
 
         &-item {
             height: 354px;

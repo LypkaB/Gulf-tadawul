@@ -1,4 +1,11 @@
 @import '1440';
 @import '1280';
 @import '1024';
+
+@media (max-width: 768px) {
+    .benefits__details {
+        grid-template-columns: 354px;
+    }
+}
+
 @import '576';
